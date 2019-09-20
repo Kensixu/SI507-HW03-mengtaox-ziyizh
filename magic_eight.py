@@ -10,3 +10,12 @@ magic_answer = ["It is certain.", "It is decidedly so.", "Without a doubt", "Yes
  "Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."]
 
 answer = random.choice(magic_answer)
+
+while True:
+    ques = my_function()
+    if ques[-1] == "?":
+        print(answer)
+    elif ques == "quit":
+        break
+    else:
+        print("I'm sorry, I can only answer questions.")
